@@ -1,14 +1,16 @@
+#NOT:burda girilen sayÄ± aralÄ±klarÄ±nÄ±n 3 e tam bÃ¶lÃ¼nenleri listeler
+
 toplam=0
 while True:
     try:
 
-        ilk=int(input("Başlangıç sayısı ="))
-        son=int(input("Kaça Kadar ="))
+        ilk=int(input("BaÅŸlangiÃ§ sayisi ="))
+        son=int(input("KaÃ§a Kadar ="))
         for i in range(ilk,son):
             if i%3==0:
                 toplam += 1
                 print(i)
 
-        print("toplam sayı=",toplam)
+        print("toplam sayi=",toplam)
     except ValueError:
-        print("Yanlış sayı girdiniz")
+        print("YanliÅŸ sayi girdiniz")
