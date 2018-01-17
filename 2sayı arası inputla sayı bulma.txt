@@ -1,0 +1,14 @@
+toplam=0
+while True:
+    try:
+
+        ilk=int(input("Baþlangýç sayýsý ="))
+        son=int(input("Kaça Kadar ="))
+        for i in range(ilk,son):
+            if i%3==0:
+                toplam += 1
+                print(i)
+
+        print("toplam sayý=",toplam)
+    except ValueError:
+        print("Yanlýþ sayý girdiniz")
